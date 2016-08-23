@@ -6,15 +6,13 @@
 */
 function prototipo_script_enqueue() {
 	//css
-     wp_enqueue_style('Materializecss', 'https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css', array(), '0.97.6', 'all');
-     wp_enqueue_style('Datepicker', 'https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css', array(), '1.11.4', 'all');
-     wp_enqueue_style('material icons', 'https://fonts.googleapis.com/icon?family=Material+Icons', array(), '1.0.0', 'all');
      wp_enqueue_style('Bootstrap grid', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '1.0.0', 'all');
-     wp_enqueue_style('style', get_template_directory_uri() . '/css/style.css', array(), '1.0.0', 'all');
+     wp_enqueue_style('Materializecss', 'https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css', array(), '0.97.7', 'all');
+     wp_enqueue_style('material icons', 'https://fonts.googleapis.com/icon?family=Material+Icons', array(), '1.0.0', 'all');
+     wp_enqueue_style('style', get_template_directory_uri() . '/css/style.css', array(), '1.0.1', 'all');
 	
     //js
     wp_enqueue_script('jquery', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js', array(), '3.1.0', true);
-    wp_enqueue_script('jquerydatepicker', 'http://code.jquery.com/ui/1.11.4/jquery-ui.js', array(), '1.11.4', true);
     wp_enqueue_script('Materialize js', 'https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js', array(), '0.97.6', true);
     wp_enqueue_script('Mixitupjs', 'https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js', array(), '2.1.11', true);
     wp_enqueue_script('Mixituppaginationjs',  'http://tseoc.co.uk/chris/jquery.mixitup-pagination.min.js', array(), '1.0.0', true);
