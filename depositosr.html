@@ -1,0 +1,1297 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+		<title>Prototipo</title>
+		<link rel="icon" type="image/x-icon" href="img/favicon/favicon.ico" />
+		<link rel="icon" type="image/png" href="img/favicon/favicon.png" />
+		<link rel="icon" type="image/gif" href="img/favicon/favicon.gif" />
+
+
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css" />
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+		
+	</head>
+	<body class="white">
+		<header>
+			<div class="navbar-fixed">
+				<nav id="site-navigation" class="main-navigation  light-blue  accent-4 noshadow" role="navigation">
+					<div class="container-fluid">
+   						<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+
+   						<ul id="nav-mobile" class="left hide-on-med-and-down">
+					        <li>
+					        	<a class="text-white"><i class="material-icons left">supervisor_account</i>Administrador</a>
+							</li>
+					    </ul>
+   						<ul id="nav-mobile" class="right">
+					        <li class="hide-on-large-only">
+					        	<a class="text-white"><i class="material-icons left">supervisor_account</i>Administrador</a>
+							</li>
+					        <li>
+					        	<a class='dropdown-button' href='#' onclick="Materialize.toast('No tiene nuevas notificaciones', 4000)">
+									<i class="material-icons">notifications_none</i>
+								</a>
+							</li>
+					        <li>
+					        	<a class='dropdown-button modal-trigger' href="#modal1" href='#' >
+					        		<i class="material-icons">mail_outline</i>
+					        	</a>
+				        	</li>
+					        <li>
+						        <a class='dropdown-button' href='#' data-activates='dropdown1'>
+						        	<i class="material-icons">more_vert</i>
+					        	</a>
+								<ul id='dropdown1' class='dropdown-content'>
+									<li><a href="#">Perfil</a></li>
+									<li class="divider"></li>
+									<li><a href="#">Logout</a></li>
+								</ul>
+							</li>
+					    </ul>
+					</div>
+				</nav>
+			</div>
+			<div id="modal1" class="modal bottom-sheet">
+			    <div class="modal-content">
+			      <ul class="collection">
+              <li class="collection-item avatar">
+                <a class="modal-trigger"  href="#chat1">
+                	<i class="material-icons circle indigo">face</i>
+	                <h5 class="title">Juan Carmona</h5>
+	                <p class="truncate" id="pchat1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </a>
+                <a href="#!" class="secondary-content"><i class="material-icons">close</i></a>
+              </li>
+              <li class="collection-item avatar">
+                <a class="modal-trigger"  href="#chat2">
+	                <i class="material-icons circle indigo">account_circle</i>
+	                <h5 class="title">Pedro Ferrer</h5>
+	                <p class="truncate" id="pchat2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </a>
+                <a href="#!" class="secondary-content"><i class="material-icons">close</i></a>
+              </li>
+              <li class="collection-item avatar">
+                <a class="modal-trigger"  href="#chat3">
+	                <i class="material-icons circle indigo">tag_faces</i>
+	                <h5 class="title">Juan Montoya</h5>
+	                <p class="truncate" id="pchat3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </a>
+                <a href="#!" class="secondary-content"><i class="material-icons">close</i></a>
+              </li>
+              <li class="collection-item avatar">
+                <a class="modal-trigger"  href="#chat4">
+	                <i class="material-icons circle indigo">android</i>
+	                <h5 class="title">Marta Castillo</h5>
+	                <p class="truncate" id="pchat4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </a>
+                <a href="#!" class="secondary-content"><i class="material-icons">close</i></a>
+              </li>
+            </ul>
+			    </div>
+			    <div class="modal-footer">
+			      <a href="#!" class="btn modal-action modal-close waves-effect waves-light indigo btn-flat white-text">Cerrar</a>
+			      
+			    </div>
+			</div>
+
+			<div id="chat1" class="modal modal-fixed-footer">
+				<div class="modal-content">
+					
+	                <h5 class="title"><i class="material-icons circle indigo">face</i> Juan Carmona</h5>
+					<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat botoncerrar"><i class="material-icons">close</i></a>
+	                <div class="divider"></div>
+					<div class="width100">
+							<p class="right-align right widthchat">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+					<div class="width100">
+							<p class="left-align left widthchat">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<div class="input-field">
+	     				<i class="material-icons prefix">message</i>
+				        <textarea id="textarea1" class="materialize-textarea inputchat"></textarea>
+						<a href="#!" class="waves-effect waves-green btn-flat "><i class="material-icons">send</i> Enviar</a>
+			        </div>
+				</div>
+			</div>
+
+
+			<div id="chat2" class="modal modal-fixed-footer">
+				<div class="modal-content">
+					
+	                <h5 class="title"><i class="material-icons circle indigo">account_circle</i> Pedro Ferrer</h5>
+					<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat botoncerrar"><i class="material-icons">close</i></a>
+	                <div class="divider"></div>
+					<div class="width100">
+							<p class="right-align right widthchat">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+					<div class="width100">
+							<p class="left-align left widthchat">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<div class="input-field">
+	     				<i class="material-icons prefix">message</i>
+				        <textarea id="textarea1" class="materialize-textarea inputchat"></textarea>
+						<a href="#!" class="waves-effect waves-green btn-flat "><i class="material-icons">send</i> Enviar</a>
+			        </div>
+				</div>
+			</div>
+
+			<div id="chat3" class="modal modal-fixed-footer">
+				<div class="modal-content">
+					
+	                <h5 class="title"><i class="material-icons circle indigo">tag_faces</i> Juan Montoya</h5>
+					<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat botoncerrar"><i class="material-icons">close</i></a>
+	                <div class="divider"></div>
+					<div class="width100">
+							<p class="right-align right widthchat">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+					<div class="width100">
+							<p class="left-align left widthchat">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<div class="input-field">
+	     				<i class="material-icons prefix">message</i>
+				        <textarea id="textarea1" class="materialize-textarea inputchat"></textarea>
+						<a href="#!" class="waves-effect waves-green btn-flat "><i class="material-icons">send</i> Enviar</a>
+			        </div>
+				</div>
+			</div>
+
+			<div id="chat4" class="modal modal-fixed-footer">
+				<div class="modal-content">
+					
+	                <h5 class="title"><i class="material-icons circle indigo">android</i> Marta Castillo</h5>
+					<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat botoncerrar"><i class="material-icons">close</i></a>
+	                <div class="divider"></div>
+					<div class="width100">
+							<p class="right-align right widthchat">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+					<div class="width100">
+							<p class="left-align left widthchat">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<div class="input-field">
+	     				<i class="material-icons prefix">message</i>
+				        <textarea id="textarea1" class="materialize-textarea inputchat"></textarea>
+						<a href="#!" class="waves-effect waves-green btn-flat "><i class="material-icons">send</i> Enviar</a>
+			        </div>
+				</div>
+			</div>
+
+			<ul id="slide-out" class="side-nav  grey lighten-5 fixed">
+				<li class="light-blue  darken-3 paddingbot5 center-align">
+					<img src="img/logo50x50.png" class="responsive-img">
+				</li>
+				<li class="light-blue accent-4 paddingtop10 center-align">
+					<a class="paddingleft15 paddingright15 avatarsidemenu heightauto">
+						<img src="img/account.png" class="circle responsive-img white">
+						<p class="white-text margintop0">Francisco Castillo</p>
+					</a>
+				</li>
+
+				<li >
+					<a href="index.html" class="menu-link main-menu-link">
+						<i class="material-icons left">dashboard</i> Escritorio
+					</a>
+				</li>
+				<ul class="collapsible" data-collapsible="accordion">
+					<li >
+						<div class="collapsible-header">
+							<i class="material-icons left">trending_up</i> Administración <i class="material-icons right">arrow_drop_down</i>
+						</div>
+						<div class="collapsible-body">
+							<ul>
+								<li ><a href="administracion.html" >Administración</a></li>
+								<li ><a href="#" >Imprimir depósitos</a></li>
+								<li ><a href="#" >Importar depósitos</a></li>
+								<li ><a href="#" >Depósitos recibidos</a></li>
+								<li ><a href="#" >Depósitos problemas</a></li>
+								<li ><a href="#" >Búsqueda</a></li>
+								<li ><a href="#" >Cerrar factura</a></li>
+								<li ><a href="#" >Historial</a></li>
+							</ul>
+						</div>
+					</li>
+					<li >
+						<div class="collapsible-header">
+							<i class="material-icons left">format_list_bulleted</i> Inventario <i class="material-icons right">arrow_drop_down</i>
+						</div>
+						<div class="collapsible-body">
+							<ul>
+								<li ><a href="inventario.html" >Inventario general</a></li>
+								<li ><a href="factura.html" >Factura</a></li>
+							</ul>
+						</div>
+					</li>
+					<li >
+						<div class="collapsible-header">
+							<i class="material-icons left">pageview</i> Control <i class="material-icons right">arrow_drop_down</i>
+						</div>
+						<div class="collapsible-body">
+							<ul>
+								<li ><a href="#" class="menu-link sub-menu-link">Devoluciones</a></li>
+								<li ><a href="#" class="menu-link sub-menu-link">Cambios y averías</a></li>
+								<li ><a href="#" class="menu-link sub-menu-link">Denuncias</a></li>
+							</ul>
+						</div>
+					</li>
+					<li >
+						<a href="#" >
+							<i class="material-icons left">insert_invitation</i> Calendario
+						</a>
+					</li>
+					<li >
+						<a href="#" >
+							<i class="material-icons left">settings</i> Configuración avanzada
+						</a>
+					</li>
+				</ul>
+				<li >
+					<a href="#" >
+						<i class="material-icons left">power_settings_new</i> Logout
+					</a>
+				</li>
+			</ul>
+		</header>  
+
+
+
+		<main>
+			<div class="container-fluid">
+				<div class="col-xs-12">
+					<h2><i class="material-icons">trending_up</i> Depósitos Recibidos</h2>
+				</div>
+                
+				<div class="col-xs-12 col-sm-12">
+					<div class="card-panel">
+                        
+					<form class="controls" id="Filters">
+						<div class="row marginbot0">
+								<h5>Filtrar por Usuarios: </h5>
+								<fieldset>
+								    <select class="input-field" id="Filters" name="Filters">
+									    <option value="">Todos</option>
+									    <option value=".zoraidamantilla">Zoraida Mantilla</option>
+									    <option value=".juanvicente">Juan Vicente</option>
+									    <option value=".perezcoronel">Perez Coronel</option>
+								    </select>
+							    </fieldset>
+	    				</div>
+						<div class="row marginbot0">
+								<h5>Filtrar por Status: </h5>
+								<fieldset>
+								    <select class="input-field" id="Filters" name="Filters">
+									    <option value="">Todos</option>
+									    <option value=".aprobado">Aprobado</option>
+									    <option value=".pendiente">Pendiente</option>
+									    <option value=".negado">Negado</option>
+								    </select>
+							    </fieldset>
+	    				</div>
+						<div class="row marginbot0">
+								<h5>Filtrar por Banco: </h5>
+								<fieldset>
+								    <select class="input-field" id="Filters" name="Filters">
+									    <option value="">Todos</option>
+									    <option value=".provincial">Provincial</option>
+									    <option value=".banesco">Banesco</option>
+									    <option value=".activo">Banco Activo</option>
+									    <option value=".bicentenario">Bicentenario</option>
+									    <option value=".venezuela">Banco de Venezuela</option>
+									    <option value=".banplus">BanPlus</option>
+									    <option value=".mercantil">Mercantil</option>
+									    <option value=".bancaribe">Bancaribe</option>
+									    <option value=".bnc">BNC</option>
+								    </select>
+							    </fieldset> 
+						</div>
+						<div class="clearfix"></div>
+						<div class="row">
+								<span class="finalinventario">Ordernar por: </span>
+								<button type="button" class="sort btn light-blue accent-4 waves-effect waves-light" data-sort="default">Default</button>
+							  	<button type="button" class="sort btn light-blue accent-4 waves-effect waves-light" data-sort="myorder:asc">Anteriores</button>
+							  	<button type="button" class="sort btn light-blue accent-4 waves-effect waves-light" data-sort="myorder:desc">Recientes</button>
+			            </div>
+					</form>
+                    </div>
+                </div>
+				<div class="col-xs-12 col-sm-12">
+					<div class="card-panel">
+                         <div class="center-align" id="Container">
+                             <div class="row">
+                                 <div class="col-xs-1">
+                                      <input type="checkbox" id="test" />
+                                      <label for="test"></label>
+                                 </div>
+                                 <div class="col-xs-11">
+                                    <div class="col-xs-4 col-sm-4 col-md-2"><h5>Fecha</h5></div>
+                                    <div class="col-xs-4 col-sm-4 col-md-2"><h5>Cliente</h5></div>
+                                    <div class="col-xs-4 col-sm-4 col-md-2"><h5>Banco</h5></div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3"><h5>Referencia</h5></div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3"><h5>Monto</h5></div>
+                                </div>
+                             </div>
+                            <div class="mix zoraidamantilla mercantil aprobado" data-myorder="100">
+                              <div class="row">
+                                 <div class="col-xs-1">
+                                      <input type="checkbox" id="test1" />
+                                      <label for="test1"></label>
+                                 </div>
+                                  <div class="col-xs-11">
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        23/09/2016
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        Zoraida Mantilla
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        Mercantil
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3"> 
+                                        82020524
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3">
+                                        Bsf 54.900,00
+                                    </div>
+                                  </div>
+                                </div>
+                             </div>
+                            <div class="mix juanvicente venezuela aprobado" data-myorder="102">
+                              <div class="row">
+                                 <div class="col-xs-1">
+                                      <input type="checkbox" id="test2" />
+                                      <label for="test2"></label>
+                                 </div>
+                                  <div class="col-xs-11">
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        23/09/2016
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        Juan Vicente
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        Venezuela
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3"> 
+                                        82020524
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3">
+                                        Bsf 54.900,00
+                                    </div>
+                                  </div>
+                                </div>
+                             </div>
+                            <div class="mix perezcoronel banesco pendiente" data-myorder="101">
+                              <div class="row">
+                                 <div class="col-xs-1">
+                                      <input type="checkbox" id="test3" />
+                                      <label for="test3"></label>
+                                 </div>
+                                  <div class="col-xs-11">
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        23/09/2016
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        Perez Coronel
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        Banesco
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3"> 
+                                        82020524
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3">
+                                        Bsf 54.900,00
+                                    </div>
+                                  </div>
+                                </div>
+                             </div>
+                            <div class="mix zoraidamantilla mercantil aprobado" data-myorder="110">
+                              <div class="row">
+                                 <div class="col-xs-1">
+                                      <input type="checkbox" id="test4" />
+                                      <label for="test4"></label>
+                                 </div>
+                                  <div class="col-xs-11">
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        23/09/2016
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        Zoraida Mantilla
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        Mercantil
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3"> 
+                                        82020524
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3">
+                                        Bsf 54.900,00
+                                    </div>
+                                  </div>
+                                </div>
+                             </div>
+                            <div class="mix juanvicente venezuela negado" data-myorder="106">
+                              <div class="row">
+                                 <div class="col-xs-1">
+                                      <input type="checkbox" id="test5" />
+                                      <label for="test5"></label>
+                                 </div>
+                                  <div class="col-xs-11">
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        23/09/2016
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        Juan Vicente
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        Venezuela
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3"> 
+                                        82020524
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3">
+                                        Bsf 54.900,00
+                                    </div>
+                                  </div>
+                                </div>
+                             </div>
+                            <div class="mix perezcoronel banesco pendiente" data-myorder="104">
+                              <div class="row">
+                                 <div class="col-xs-1">
+                                      <input type="checkbox" id="test6" />
+                                      <label for="test6"></label>
+                                 </div>
+                                  <div class="col-xs-11">
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        23/09/2016
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        Perez Coronel
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        Banesco
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3"> 
+                                        82020524
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3">
+                                        Bsf 54.900,00
+                                    </div>
+                                  </div>
+                                </div>
+                             </div>
+                            <div class="mix zoraidamantilla mercantil aprobado" data-myorder="103">
+                              <div class="row">
+                                 <div class="col-xs-1">
+                                      <input type="checkbox" id="test7" />
+                                      <label for="test7"></label>
+                                 </div>
+                                  <div class="col-xs-11">
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        23/09/2016
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        Zoraida Mantilla
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        Mercantil
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3"> 
+                                        82020524
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3">
+                                        Bsf 54.900,00
+                                    </div>
+                                  </div>
+                                </div>
+                             </div>
+                            <div class="mix juanvicente venezuela aprobado" data-myorder="105">
+                              <div class="row">
+                                 <div class="col-xs-1">
+                                      <input type="checkbox" id="test8" />
+                                      <label for="test8"></label>
+                                 </div>
+                                  <div class="col-xs-11">
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        23/09/2016
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        Juan Vicente
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        Venezuela
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3"> 
+                                        82020524
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3">
+                                        Bsf 54.900,00
+                                    </div>
+                                  </div>
+                                </div>
+                             </div>
+                            <div class="mix perezcoronel banesco pendiente" data-myorder="106">
+                              <div class="row">
+                                 <div class="col-xs-1">
+                                      <input type="checkbox" id="test9" />
+                                      <label for="test9"></label>
+                                 </div>
+                                  <div class="col-xs-11">
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        23/09/2016
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        Perez Coronel
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        Banesco
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3"> 
+                                        82020524
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3">
+                                        Bsf 54.900,00
+                                    </div>
+                                  </div>
+                                </div>
+                             </div>
+                            <div class="mix zoraidamantilla mercantil aprobado" data-myorder="108">
+                              <div class="row">
+                                 <div class="col-xs-1">
+                                      <input type="checkbox" id="test10" />
+                                      <label for="test10"></label>
+                                 </div>
+                                  <div class="col-xs-11">
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        23/09/2016
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        Zoraida Mantilla
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        Mercantil
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3"> 
+                                        82020524
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3">
+                                        Bsf 54.900,00
+                                    </div>
+                                  </div>
+                                </div>
+                             </div>
+                            <div class="mix juanvicente venezuela aprobado" data-myorder="109">
+                              <div class="row">
+                                 <div class="col-xs-1">
+                                      <input type="checkbox" id="test11" />
+                                      <label for="test11"></label>
+                                 </div>
+                                  <div class="col-xs-11">
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        23/09/2016
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        Juan Vicente
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        Venezuela
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3"> 
+                                        82020524
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3">
+                                        Bsf 54.900,00
+                                    </div>
+                                  </div>
+                                </div>
+                             </div>
+                            <div class="mix perezcoronel banesco pendiente" data-myorder="107">
+                              <div class="row">
+                                 <div class="col-xs-1">
+                                      <input type="checkbox" id="test12" />
+                                      <label for="test12"></label>
+                                 </div>
+                                  <div class="col-xs-11">
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        23/09/2016
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        Perez Coronel
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        Banesco
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3"> 
+                                        82020524
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3">
+                                        Bsf 54.900,00
+                                    </div>
+                                  </div>
+                                </div>
+                             </div>
+                            <div class="mix zoraidamantilla mercantil aprobado" data-myorder="111">
+                              <div class="row">
+                                 <div class="col-xs-1">
+                                      <input type="checkbox" id="test13" />
+                                      <label for="test13"></label>
+                                 </div>
+                                  <div class="col-xs-11">
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        23/09/2016
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        Zoraida Mantilla
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        Mercantil
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3"> 
+                                        82020524
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3">
+                                        Bsf 54.900,00
+                                    </div>
+                                  </div>
+                                </div>
+                             </div>
+                            <div class="mix juanvicente venezuela aprobado" data-myorder="112">
+                              <div class="row">
+                                 <div class="col-xs-1">
+                                      <input type="checkbox" id="test14" />
+                                      <label for="test14"></label>
+                                 </div>
+                                  <div class="col-xs-11">
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        23/09/2016
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        Juan Vicente
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        Venezuela
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3"> 
+                                        82020524
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3">
+                                        Bsf 54.900,00
+                                    </div>
+                                  </div>
+                                </div>
+                             </div>
+                            <div class="mix perezcoronel banesco pendiente" data-myorder="119">
+                              <div class="row">
+                                 <div class="col-xs-1">
+                                      <input type="checkbox" id="test15" />
+                                      <label for="test15"></label>
+                                 </div>
+                                  <div class="col-xs-11">
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        23/09/2016
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        Perez Coronel
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        Banesco
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3"> 
+                                        82020524
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3">
+                                        Bsf 54.900,00
+                                    </div>
+                                  </div>
+                                </div>
+                             </div>
+                            <div class="mix zoraidamantilla mercantil aprobado" data-myorder="113">
+                              <div class="row">
+                                 <div class="col-xs-1">
+                                      <input type="checkbox" id="test16" />
+                                      <label for="test16"></label>
+                                 </div>
+                                  <div class="col-xs-11">
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        23/09/2016
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        Zoraida Mantilla
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        Mercantil
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3"> 
+                                        82020524
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3">
+                                        Bsf 54.900,00
+                                    </div>
+                                  </div>
+                                </div>
+                             </div>
+                            <div class="mix juanvicente venezuela aprobado" data-myorder="115">
+                              <div class="row">
+                                 <div class="col-xs-1">
+                                      <input type="checkbox" id="test17" />
+                                      <label for="test17"></label>
+                                 </div>
+                                  <div class="col-xs-11">
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        23/09/2016
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        Juan Vicente
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        Venezuela
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3"> 
+                                        82020524
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3">
+                                        Bsf 54.900,00
+                                    </div>
+                                  </div>
+                                </div>
+                             </div>
+                            <div class="mix perezcoronel banesco pendiente" data-myorder="114">
+                              <div class="row">
+                                 <div class="col-xs-1">
+                                      <input type="checkbox" id="test18" />
+                                      <label for="test18"></label>
+                                 </div>
+                                  <div class="col-xs-11">
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        23/09/2016
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        Perez Coronel
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        Banesco
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3"> 
+                                        82020524
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3">
+                                        Bsf 54.900,00
+                                    </div>
+                                  </div>
+                                </div>
+                             </div>
+                            <div class="mix zoraidamantilla mercantil aprobado" data-myorder="117">
+                              <div class="row">
+                                 <div class="col-xs-1">
+                                      <input type="checkbox" id="test19" />
+                                      <label for="test19"></label>
+                                 </div>
+                                  <div class="col-xs-11">
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        23/09/2016
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        Zoraida Mantilla
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        Mercantil
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3"> 
+                                        82020524
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3">
+                                        Bsf 54.900,00
+                                    </div>
+                                  </div>
+                                </div>
+                             </div>
+                            <div class="mix juanvicente venezuela aprobado" data-myorder="116">
+                              <div class="row">
+                                 <div class="col-xs-1">
+                                      <input type="checkbox" id="test20" />
+                                      <label for="test20"></label>
+                                 </div>
+                                  <div class="col-xs-11">
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        23/09/2016
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        Juan Vicente
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        Venezuela
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3"> 
+                                        82020524
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3">
+                                        Bsf 54.900,00
+                                    </div>
+                                  </div>
+                                </div>
+                             </div>
+                            <div class="mix perezcoronel banesco negado" data-myorder="118">
+                              <div class="row">
+                                 <div class="col-xs-1">
+                                      <input type="checkbox" id="test21" />
+                                      <label for="test21"></label>
+                                 </div>
+                                  <div class="col-xs-11">
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        23/09/2016
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        Perez Coronel
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        Banesco
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3"> 
+                                        82020524
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3">
+                                        Bsf 54.900,00
+                                    </div>
+                                  </div>
+                                </div>
+                             </div>
+                            <div class="mix zoraidamantilla mercantil aprobado" data-myorder="120">
+                              <div class="row">
+                                 <div class="col-xs-1">
+                                      <input type="checkbox" id="test22" />
+                                      <label for="test22"></label>
+                                 </div>
+                                  <div class="col-xs-11">
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        23/09/2016
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        Zoraida Mantilla
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        Mercantil
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3"> 
+                                        82020524
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3">
+                                        Bsf 54.900,00
+                                    </div>
+                                  </div>
+                                </div>
+                             </div>
+                            <div class="mix juanvicente venezuela aprobado" data-myorder="121">
+                              <div class="row">
+                                 <div class="col-xs-1">
+                                      <input type="checkbox" id="test23" />
+                                      <label for="test23"></label>
+                                 </div>
+                                  <div class="col-xs-11">
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        23/09/2016
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        Juan Vicente
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        Venezuela
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3"> 
+                                        82020524
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3">
+                                        Bsf 54.900,00
+                                    </div>
+                                  </div>
+                                </div>
+                             </div>
+                            <div class="mix perezcoronel banesco pendiente" data-myorder="123">
+                              <div class="row">
+                                 <div class="col-xs-1">
+                                      <input type="checkbox" id="test24" />
+                                      <label for="test24"></label>
+                                 </div>
+                                  <div class="col-xs-11">
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        23/09/2016
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        Perez Coronel
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        Banesco
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3"> 
+                                        82020524
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3">
+                                        Bsf 54.900,00
+                                    </div>
+                                  </div>
+                                </div>
+                             </div>
+                            <div class="mix zoraidamantilla mercantil aprobado" data-myorder="122">
+                              <div class="row">
+                                 <div class="col-xs-1">
+                                      <input type="checkbox" id="test25" />
+                                      <label for="test25"></label>
+                                 </div>
+                                  <div class="col-xs-11">
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        23/09/2016
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        Zoraida Mantilla
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        Mercantil
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3"> 
+                                        82020524
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3">
+                                        Bsf 54.900,00
+                                    </div>
+                                  </div>
+                                </div>
+                             </div>
+                            <div class="mix juanvicente venezuela aprobado" data-myorder="125">
+                              <div class="row">
+                                 <div class="col-xs-1">
+                                      <input type="checkbox" id="test26" />
+                                      <label for="test26"></label>
+                                 </div>
+                                  <div class="col-xs-11">
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        23/09/2016
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        Juan Vicente
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        Venezuela
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3"> 
+                                        82020524
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3">
+                                        Bsf 54.900,00
+                                    </div>
+                                  </div>
+                                </div>
+                             </div>
+                            <div class="mix perezcoronel banesco pendiente" data-myorder="124">
+                              <div class="row">
+                                 <div class="col-xs-1">
+                                      <input type="checkbox" id="test27" />
+                                      <label for="test27"></label>
+                                 </div>
+                                  <div class="col-xs-11">
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        23/09/2016
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        Perez Coronel
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        Banesco
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3"> 
+                                        82020524
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3">
+                                        Bsf 54.900,00
+                                    </div>
+                                  </div>
+                                </div>
+                             </div>
+                            <div class="mix zoraidamantilla mercantil aprobado" data-myorder="127">
+                              <div class="row">
+                                 <div class="col-xs-1">
+                                      <input type="checkbox" id="test28" />
+                                      <label for="test28"></label>
+                                 </div>
+                                  <div class="col-xs-11">
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        23/09/2016
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        Zoraida Mantilla
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        Mercantil
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3"> 
+                                        82020524
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3">
+                                        Bsf 54.900,00
+                                    </div>
+                                  </div>
+                                </div>
+                             </div>
+                            <div class="mix juanvicente venezuela aprobado" data-myorder="126">
+                              <div class="row">
+                                 <div class="col-xs-1">
+                                      <input type="checkbox" id="test29" />
+                                      <label for="test29"></label>
+                                 </div>
+                                  <div class="col-xs-11">
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        23/09/2016
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        Juan Vicente
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        Venezuela
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3"> 
+                                        82020524
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3">
+                                        Bsf 54.900,00
+                                    </div>
+                                  </div>
+                                </div>
+                             </div>
+                            <div class="mix perezcoronel banesco pendiente" data-myorder="128">
+                              <div class="row">
+                                 <div class="col-xs-1">
+                                      <input type="checkbox" id="test30" />
+                                      <label for="test30"></label>
+                                 </div>
+                                  <div class="col-xs-11">
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        23/09/2016
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        Perez Coronel
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        Banesco
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3"> 
+                                        82020524
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3">
+                                        Bsf 54.900,00
+                                    </div>
+                                  </div>
+                                </div>
+                             </div>
+                            <div class="mix zoraidamantilla mercantil aprobado" data-myorder="129">
+                              <div class="row">
+                                 <div class="col-xs-1">
+                                      <input type="checkbox" id="test31" />
+                                      <label for="test31"></label>
+                                 </div>
+                                  <div class="col-xs-11">
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        23/09/2016
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        Zoraida Mantilla
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        Mercantil
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3"> 
+                                        82020524
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3">
+                                        Bsf 54.900,00
+                                    </div>
+                                  </div>
+                                </div>
+                             </div>
+                            <div class="mix juanvicente venezuela aprobado" data-myorder="125">
+                              <div class="row">
+                                 <div class="col-xs-1">
+                                      <input type="checkbox" id="test32" />
+                                      <label for="test32"></label>
+                                 </div>
+                                  <div class="col-xs-11">
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        23/09/2016
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        Juan Vicente
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        Venezuela
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3"> 
+                                        82020524
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3">
+                                        Bsf 54.900,00
+                                    </div>
+                                  </div>
+                                </div>
+                             </div>
+                            <div class="mix perezcoronel banesco negado" data-myorder="130">
+                              <div class="row">
+                                 <div class="col-xs-1">
+                                      <input type="checkbox" id="test33" />
+                                      <label for="test33"></label>
+                                 </div>
+                                  <div class="col-xs-11">
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        23/09/2016
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        Perez Coronel
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-2"> 
+                                        Banesco
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3"> 
+                                        82020524
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3">
+                                        Bsf 54.900,00
+                                    </div>
+                                  </div>
+                                </div>
+                             </div>
+                        </div>
+                        <div class="pager-list center-align"></div>
+					</div>
+				</div>
+			</div>
+            <div class="fixed-action-btn horizontal">
+                <a class="btn-floating btn-large deep-orange">
+                  <i class="large material-icons">menu</i>
+                </a>
+                <ul>
+                  <li><a class="btn-floating blue"><i class="material-icons">mode_edit</i></a></li>
+                  <li><a class="btn-floating green"><i class="material-icons">check</i></a></li>
+                  <li><a class="btn-floating yellow"><i class="material-icons">warning</i></a></li>
+                  <li><a class="btn-floating red"><i class="material-icons">clear</i></a></li>
+                </ul>
+            </div>
+		</main>
+		<footer>
+			<div class="footer  light-blue accent-4">
+	            <div class="container">
+	                <div class="row marginbot0">
+	                    <div class="col-md-12">
+	                        <p class="copyright center-align small"> Todos los Derechos Reservados | Desarrollado por <a href="http://bitcodeweb.com/" target="_blank"><img src="img/logomini.png"></a></p>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </footer>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>
+        <script src="http://tseoc.co.uk/chris/jquery.mixitup-pagination.min.js"></script>
+
+
+        <script>
+             jQuery(document).ready(function(){
+                jQuery(".button-collapse").sideNav();
+                jQuery(".dropdown-button").dropdown({constrain_width: false,belowOrigin: false, alignment: 'left', inDuration: 150, outDuration: 225, });
+				jQuery('.modal-trigger').leanModal();
+				jQuery('.collapsible').collapsible();
+				jQuery('select').material_select();
+                jQuery('#test').click(function(event) {   
+                    if(this.checked) {
+                        // Iterate each checkbox
+                        $(':checkbox').each(function() {
+                            this.checked = true;                        
+                        });
+                    } 
+                    if(!this.checked) {
+                        // Iterate each checkbox
+                        $(':checkbox').each(function() {
+                            this.checked = false;                        
+                        });
+                    }
+                });
+            });
+        </script>
+
+        <script>
+	var dropdownFilter = {
+	  $filters: null,
+	  $reset: null,
+	  groups: [],
+	  outputArray: [],
+	  outputString: '',
+	  
+	  init: function(){
+	    var self = this;
+	    self.$filters = $('#Filters');
+	    self.$reset = $('#Reset');
+	    self.$container = $('#Container');
+	    self.$filters.find('fieldset').each(function(){
+	      self.groups.push({
+	        $dropdown: $(this).find('select'),
+	        active: ''
+	      });
+	    });
+	    
+	    self.bindHandlers();
+	  },
+	  bindHandlers: function(){
+	    var self = this;
+	    self.$filters.on('change', 'select', function(e){
+	      e.preventDefault();
+	      
+	      self.parseFilters();
+	    });
+	    self.$reset.on('click', function(e){
+	      e.preventDefault();
+	      
+	      self.$filters.find('select').val('');
+	      
+	      self.parseFilters();
+	    });
+	  },
+	  parseFilters: function(){
+	    var self = this;
+	    for(var i = 0, group; group = self.groups[i]; i++){
+	      group.active = group.$dropdown.val();
+	    }
+	    
+	    self.concatenate();
+	  },
+	  concatenate: function(){
+	    var self = this;
+	    
+	    self.outputString = '';
+	    
+	    for(var i = 0, group; group = self.groups[i]; i++){
+	      self.outputString += group.active;
+	    }
+	    !self.outputString.length && (self.outputString = 'all'); 
+		  if(self.$container.mixItUp('isLoaded')){
+	    	self.$container.mixItUp('filter', self.outputString);
+		  }
+	  }
+	};
+	$(function(){ dropdownFilter.init();
+	    jQuery('#Container').mixItUp({
+			animation: { duration: 200 },
+			pagination: { limit: 15, loop: false, prevButtonHTML: '<a><h5>Anterior</h5></a>', nextButtonHTML: '<a><h5>Siguiente</h5></a>' },
+			controls: { toggleFilterButtons: true, toggleLogic: 'and' },
+			load: { sort: 'myorder:desc' }
+	  });    
+	});
+</script>
+	</body>
+</html>

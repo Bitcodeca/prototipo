@@ -16,10 +16,10 @@
 
 		
 	</head>
-	<body class="grey lighten-5">
+	<body class="white">
 		<header>
 			<div class="navbar-fixed">
-				<nav id="site-navigation" class="main-navigation indigo darken-3 noshadow" role="navigation">
+				<nav id="site-navigation" class="main-navigation light-blue accent-4 noshadow" role="navigation">
 					<div class="container-fluid">
    						<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
 
@@ -187,11 +187,11 @@
 			        </div>
 				</div>
 			</div>
-			<ul id="slide-out" class="side-nav  grey lighten-3 fixed">
-				<li class=" indigo darken-4 paddingbot5 center-align">
+			<ul id="slide-out" class="side-nav  grey lighten-5 fixed">
+				<li class="light-blue darken-3 paddingbot5 center-align">
 					<img src="img/logo50x50.png" class="responsive-img">
 				</li>
-				<li class=" indigo darken-3 paddingtop10 center-align">
+				<li class="light-blue accent-4 paddingtop10 center-align">
 					<a class="paddingleft15 paddingright15 avatarsidemenu heightauto">
 						<img src="img/account.png" class="circle responsive-img white">
 						<p class="white-text margintop0">Francisco Castillo</p>
@@ -210,10 +210,10 @@
 						</div>
 						<div class="collapsible-body">
 							<ul>
-								<li ><a href="#" >Administración</a></li>
+								<li ><a href="administracion.html" >Administración</a></li>
 								<li ><a href="#" >Imprimir depósitos</a></li>
 								<li ><a href="#" >Importar depósitos</a></li>
-								<li ><a href="#" >Depósitos recibidos</a></li>
+								<li ><a href="depositosr.html" >Depósitos recibidos</a></li>
 								<li ><a href="#" >Depósitos problemas</a></li>
 								<li ><a href="#" >Búsqueda</a></li>
 								<li ><a href="#" >Cerrar factura</a></li>
@@ -227,7 +227,7 @@
 						</div>
 						<div class="collapsible-body">
 							<ul>
-								<li ><a href="#" >Inventario general</a></li>
+								<li ><a href="inventario.html" >Inventario general</a></li>
 								<li ><a href="factura.html" >Factura</a></li>
 							</ul>
 						</div>
@@ -483,9 +483,19 @@
 					</div>
 				</div>
 			</div>
+            <div class="fixed-action-btn horizontal">
+                <a class="btn-floating btn-large deep-orange">
+                  <i class="large material-icons">menu</i>
+                </a>
+                <ul>
+                  <li><a class="btn-floating green"><i class="material-icons">print</i></a></li>
+                  <li><a class="btn-floating purple"><i class="material-icons">account_circle</i></a></li>
+                  <li><a class="btn-floating blue"><i class="material-icons">mode_edit</i></a></li>
+                </ul>
+            </div>
 		</main>
 		<footer>
-			<div class="footer indigo darken-3">
+			<div class="footer  light-blue accent-4">
 	            <div class="container">
 	                <div class="row marginbot0">
 	                    <div class="col-md-12">
@@ -525,20 +535,5 @@
 				jQuery('select').material_select();
             });
         </script>
-
-		<script>
-			/*jQuery( "#chat1" ).click(function() {
-				$("#pchat1").toggleClass("destruncate");
-			});
-			jQuery( "#chat2" ).click(function() {
-				$("#pchat2").toggleClass("destruncate");
-			});
-			jQuery( "#chat3" ).click(function() {
-				$("#pchat3").toggleClass("destruncate");
-			});
-			jQuery( "#chat4" ).click(function() {
-				$("#pchat4").toggleClass("destruncate");
-			});*/
-		</script>
 	</body>
 </html>

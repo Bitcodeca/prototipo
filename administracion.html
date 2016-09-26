@@ -19,7 +19,7 @@
 	<body class="white">
 		<header>
 			<div class="navbar-fixed">
-				<nav id="site-navigation" class="main-navigation light-blue accent-4 noshadow" role="navigation">
+				<nav id="site-navigation" class="main-navigation  light-blue  accent-4 noshadow" role="navigation">
 					<div class="container-fluid">
    						<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
 
@@ -189,7 +189,7 @@
 			</div>
 
 			<ul id="slide-out" class="side-nav  grey lighten-5 fixed">
-				<li class="light-blue darken-3 paddingbot5 center-align">
+				<li class="light-blue  darken-3 paddingbot5 center-align">
 					<img src="img/logo50x50.png" class="responsive-img">
 				</li>
 				<li class="light-blue accent-4 paddingtop10 center-align">
@@ -269,246 +269,63 @@
 		<main>
 			<div class="container-fluid">
 				<div class="col-xs-12">
-					<h2><i class="material-icons">dashboard</i> Escritorio</h2>
+					<h2><i class="material-icons">trending_up</i> Administración</h2>
 				</div>
-
-				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
 					<div class="card-panel  hoverable">
-						<h4 class="center-align">Ingreso Quincenal</h4>
-						<h5 class="center-align">Bsf 8.680.005,00</h5>
+						<h4 class="center-align">Total Ingresado</h4>
+						<h5 class="center-align">Bsf 108.680.005,00</h5>
 					</div>
 				</div>
 				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
 					<div class="card-panel  hoverable">
-						<h4 class="center-align">Depósitos Aprobados</h4>
-						<h5 class="center-align">834 TOTAL</h5>
+						<h4 class="center-align">Total Egresado</h4>
+						<h5 class="center-align">Bsf 18.340.063,00</h5>
 					</div>
 				</div>
 				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
 					<div class="card-panel  hoverable">
-						<h4 class="center-align">Depósitos Problemas</h4>
-						<h5 class="center-align">11 TOTAL</h5>
+						<h4 class="center-align">Número de depósitos</h4>
+						<h5 class="center-align">1754 TOTAL</h5>
 					</div>
 				</div>
 				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
 					<div class="card-panel  hoverable">
 						<h4 class="center-align">Gerentes</h4>
-						<h5 class="center-align">64 TOTAL</h5>
+						<h5 class="center-align">264 TOTAL</h5>
 					</div>
 				</div>
-
-
-				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
 					<div class="card-panel">
-						<h4 class="center-align">Colecciones</h4>
-						<h5 class="center-align">4700 TOTAL</h5>
-						<canvas id="myChart1" width="100%" height="100%"></canvas>
-
-					</div>
-				</div>
-				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-					<div class="card-panel">
-						<h4 class="center-align">Total Invertido</h4>
-						<h5 class="center-align">Bsf 83.471.005,00</h5>
-						<canvas id="myChart2" width="100%" height="100%"></canvas>
-					</div>
-				</div>
-				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-					<div class="card-panel">
-						<h4 class="center-align">Total Aprobado</h4>
-						<h5 class="center-align">Bsf 43.680.005,00</h5>
-						<canvas id="myChart3" width="100%" height="100%"></canvas>
-					</div>
-				</div>
-				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-					<div class="card-panel">
-						<h4 class="center-align">Gerentes</h4>
-						<h5 class="center-align">64 TOTAL</h5>
-						<canvas id="myChart4" width="100%" height="100%"></canvas>
-					</div>
-				</div>
-
-
-				<div class="col-xs-12 hide-on-med-and-down">
-					<div class="card-panel  hoverable">
 						<h4 class="center-align">Historial Administrativo</h4>
-						<canvas id="myChart5" class="" width="100%" height="40%"></canvas>
+						<canvas id="myChart5" class="" width="100%" height="80%"></canvas>
 					</div>
 				</div>
-				<div class="col-xs-12 hide-on-large-only">
-					<div class="card-panel  hoverable">
-						<h4 class="center-align">Historial Administrativo</h4>
-						<canvas id="myChart6" class="" width="100%" height="100%"></canvas>
+                
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+					<div class="card-panel">
+						<h4 class="center-align">Historial por Colección</h4>
+						<canvas id="myChart6" class="" width="100%" height="80%"></canvas>
 					</div>
 				</div>
-				<div class="col-xs-12 col-sm-6">
-					<div class="card-panel  hoverable">
-						<h4 class="center-align">Buscar depósito</h4>
-					        <div class="input-field">
-			          			<i class="material-icons prefix">account_circle</i>
-			          			<select>
-									<option value="" disabled selected>Seleccionar Usuario</option>
-									<option value="albamontoya3">albamontoya3</option>
-									<option value="Albenis_Blanco">Albenis_Blanco</option>
-									<option value="anasolano">anasolano</option>
-									<option value="Argelis_Rivas">Argelis_Rivas</option>
-									<option value="Aura_Machado">Aura_Machado</option>
-									<option value="Belkis_Briceno">Belkis_Briceno</option>
-									<option value="Belkis_Briceno2">Belkis_Briceno2</option>
-									<option value="Bernardina_Graterol">Bernardina_Graterol</option>
-									<option value="Betty_Palacios">Betty_Palacios</option>
-									<option value="BitAnalista">BitAnalista</option>
-									<option value="bitcode">bitcode</option>
-									<option value="Carolina_Fraga">Carolina_Fraga</option>
-									<option value="Catalina_Carmona2">Catalina_Carmona2</option>
-									<option value="Dayana_Paredes">Dayana_Paredes</option>
-									<option value="e7TFSd0RulDKsw741d">e7TFSd0RulDKsw741d</option>
-									<option value="Edila_Contreras">Edila_Contreras</option>
-									<option value="elba_colmenares">elba_colmenares</option>
-									<option value="elba_salazar">elba_salazar</option>
-									<option value="eligheor">eligheor</option>
-									<option value="Esperanza_Carreno">Esperanza_Carreno</option>
-									<option value="Fabiola_Martinez">Fabiola_Martinez</option>
-									<option value="fabiola_martinez2">fabiola_martinez2</option>
-									<option value="Genia_Silva">Genia_Silva</option>
-									<option value="geolmer23">geolmer23</option>
-									<option value="Georelvik">Georelvik</option>
-									<option value="Gisela_desosa">Gisela_desosa</option>
-									<option value="Ines_Castro">Ines_Castro</option>
-									<option value="iris_solorzano">iris_solorzano</option>
-									<option value="Iris_Solorzano2">Iris_Solorzano2</option>
-									<option value="Karina_Plata">Karina_Plata</option>
-									<option value="karina_plata2">karina_plata2</option>
-									<option value="Leidy_Forero">Leidy_Forero</option>
-									<option value="Ligia_Aguilar">Ligia_Aguilar</option>
-									<option value="Ligia_Aguilar2">Ligia_Aguilar2</option>
-									<option value="Lisbeth_Soto">Lisbeth_Soto</option>
-									<option value="Lourdes_Calcurian">Lourdes_Calcurian</option>
-									<option value="Marbeluz_Ramirez">Marbeluz_Ramirez</option>
-									<option value="Mireya_Fernandez">Mireya_Fernandez</option>
-									<option value="Naryibis_Graterol">Naryibis_Graterol</option>
-									<option value="Natali_Bolivar">Natali_Bolivar</option>
-									<option value="Onestica_Parra">Onestica_Parra</option>
-									<option value="Regina_Aponte">Regina_Aponte</option>
-									<option value="Reina_Vicuna">Reina_Vicuna</option>
-									<option value="Rogna_Landinez">Rogna_Landinez</option>
-									<option value="Skarly_Araujo">Skarly_Araujo</option>
-									<option value="yadira_Sanchez">yadira_Sanchez</option>
-									<option value="Yenny_Franquinez">Yenny_Franquinez</option>
-									<option value="yenny_franquinez2">yenny_franquinez2</option>
-									<option value="yorley_Nino">yorley_Nino</option>
-									<option value="yuderkyz_torres">yuderkyz_torres</option>
-									<option value="Yurley_Canas">Yurley_Canas</option>
-									<option value="zoraidamantilla">zoraidamantilla</option>
-								</select>
-
-					        </div>
-					        <div class="input-field">
-			          			<i class="material-icons prefix">payment</i>
-			          			<select>
-									<option value=""  disabled selected>Todos</option>
-									<option value="provincial">Provincial</a>
-									<option value="banesco">Banesco</a>
-									<option value="activo">Banco Activo</a>
-									<option value="bicentenario">Banco Bicentenario</a>
-									<option value="venezuela">Banco de Venezuela</a>
-									<option value="banplus">Banco BanPlus</a>
-									<option value="mercantil">Banco Mercantil</a>
-								</select>
-					        </div>
-					        <div class="input-field">
-					        	<i class="material-icons prefix">date_range</i>
-					        	<input placeholder="Fecha" type="date" id="date" class="datepicker">
-					        </div>
-					        <a class="btn waves-effect waves-light indigo" href="factura.html">
-					        	Registrar
-							    <i class="material-icons left">add_shopping_cart</i>
-							</a>
-
-					</div>
-				</div>
-				<div class="col-xs-12 col-sm-6">
-					<div class="card-panel  hoverable">
-						<h4 class="center-align">Buscar Factura</h4>
-					        <div class="input-field">
-			          			<i class="material-icons prefix">account_circle</i>
-			          			<select>
-									<option value="" disabled selected>Seleccionar Usuario</option>
-									<option value="albamontoya3">albamontoya3</option>
-									<option value="Albenis_Blanco">Albenis_Blanco</option>
-									<option value="anasolano">anasolano</option>
-									<option value="Argelis_Rivas">Argelis_Rivas</option>
-									<option value="Aura_Machado">Aura_Machado</option>
-									<option value="Belkis_Briceno">Belkis_Briceno</option>
-									<option value="Belkis_Briceno2">Belkis_Briceno2</option>
-									<option value="Bernardina_Graterol">Bernardina_Graterol</option>
-									<option value="Betty_Palacios">Betty_Palacios</option>
-									<option value="BitAnalista">BitAnalista</option>
-									<option value="bitcode">bitcode</option>
-									<option value="Carolina_Fraga">Carolina_Fraga</option>
-									<option value="Catalina_Carmona2">Catalina_Carmona2</option>
-									<option value="Dayana_Paredes">Dayana_Paredes</option>
-									<option value="e7TFSd0RulDKsw741d">e7TFSd0RulDKsw741d</option>
-									<option value="Edila_Contreras">Edila_Contreras</option>
-									<option value="elba_colmenares">elba_colmenares</option>
-									<option value="elba_salazar">elba_salazar</option>
-									<option value="eligheor">eligheor</option>
-									<option value="Esperanza_Carreno">Esperanza_Carreno</option>
-									<option value="Fabiola_Martinez">Fabiola_Martinez</option>
-									<option value="fabiola_martinez2">fabiola_martinez2</option>
-									<option value="Genia_Silva">Genia_Silva</option>
-									<option value="geolmer23">geolmer23</option>
-									<option value="Georelvik">Georelvik</option>
-									<option value="Gisela_desosa">Gisela_desosa</option>
-									<option value="Ines_Castro">Ines_Castro</option>
-									<option value="iris_solorzano">iris_solorzano</option>
-									<option value="Iris_Solorzano2">Iris_Solorzano2</option>
-									<option value="Karina_Plata">Karina_Plata</option>
-									<option value="karina_plata2">karina_plata2</option>
-									<option value="Leidy_Forero">Leidy_Forero</option>
-									<option value="Ligia_Aguilar">Ligia_Aguilar</option>
-									<option value="Ligia_Aguilar2">Ligia_Aguilar2</option>
-									<option value="Lisbeth_Soto">Lisbeth_Soto</option>
-									<option value="Lourdes_Calcurian">Lourdes_Calcurian</option>
-									<option value="Marbeluz_Ramirez">Marbeluz_Ramirez</option>
-									<option value="Mireya_Fernandez">Mireya_Fernandez</option>
-									<option value="Naryibis_Graterol">Naryibis_Graterol</option>
-									<option value="Natali_Bolivar">Natali_Bolivar</option>
-									<option value="Onestica_Parra">Onestica_Parra</option>
-									<option value="Regina_Aponte">Regina_Aponte</option>
-									<option value="Reina_Vicuna">Reina_Vicuna</option>
-									<option value="Rogna_Landinez">Rogna_Landinez</option>
-									<option value="Skarly_Araujo">Skarly_Araujo</option>
-									<option value="yadira_Sanchez">yadira_Sanchez</option>
-									<option value="Yenny_Franquinez">Yenny_Franquinez</option>
-									<option value="yenny_franquinez2">yenny_franquinez2</option>
-									<option value="yorley_Nino">yorley_Nino</option>
-									<option value="yuderkyz_torres">yuderkyz_torres</option>
-									<option value="Yurley_Canas">Yurley_Canas</option>
-									<option value="zoraidamantilla">zoraidamantilla</option>
-								</select>
-
-					        </div>
-					        <a class="btn waves-effect waves-light indigo" href="factura.html">
-					        	Buscar
-							    <i class="material-icons left">search</i>
-							</a>
-					</div>
-				</div>
+                
 			</div>
             <div class="fixed-action-btn horizontal">
                 <a class="btn-floating btn-large deep-orange">
-                  <i class="large material-icons">add</i>
+                  <i class="large material-icons">menu</i>
                 </a>
                 <ul>
-                  <li><a class="btn-floating green"><i class="material-icons">add</i></a></li>
-                  <li><a class="btn-floating red"><i class="material-icons">remove</i></a></li>
-                  <li><a class="btn-floating blue"><i class="material-icons">mode_edit</i></a></li>
+                  <li><a class="btn-floating yellow"><i class="material-icons">mode_edit</i></a></li>
+                  <li><a class="btn-floating green"><i class="material-icons">file_download</i></a></li>
+                  <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+                  <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+                  <li><a class="btn-floating black"><i class="material-icons">delete_forever</i></a></li>
                 </ul>
             </div>
 		</main>
 		<footer>
-			<div class="footer light-blue accent-4">
+			<div class="footer  light-blue accent-4">
 	            <div class="container">
 	                <div class="row marginbot0">
 	                    <div class="col-md-12">
@@ -521,155 +338,74 @@
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
-
-
-
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.2/Chart.min.js"></script>
+        
         <script>
              jQuery(document).ready(function(){
                 jQuery(".button-collapse").sideNav();
                 jQuery(".dropdown-button").dropdown({constrain_width: false,belowOrigin: false, alignment: 'left', inDuration: 150, outDuration: 225, });
-				jQuery('.datepicker').pickadate({
-					labelMonthNext: 'Siguiente mes',
-					labelMonthPrev: 'Mes anterior',
-					labelMonthSelect: 'Selecciona el mes',
-					labelYearSelect: 'Selecciona el año',
-					monthsFull: [ 'Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre' ],
-					monthsShort: [ 'Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic' ],
-					weekdaysFull: [ 'Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado' ],
-					weekdaysShort: [ 'Dom', 'Lun', 'Mar', 'Mie', 'Jue', 'Vie', 'Sab' ],
-					weekdaysLetter: [ 'D', 'L', 'M', 'X', 'J', 'V', 'S' ],
-					today: 'Hoy',
-					clear: 'Borrar',
-					close: 'Cerrar',
-					format: 'dd/mm/yyyy'
-				});
 				jQuery('.modal-trigger').leanModal();
 				jQuery('.collapsible').collapsible();
 				jQuery('select').material_select();
-
-                var w = 0;
-				function checkWidth() {
-                    if(jQuery(this).width() != w){
-                    	w = jQuery(this).width();
-	                    if (w>768) {
-                            var ctx = document.getElementById("myChart5");
-							var myChart5 = new Chart(ctx, {
-							    type: 'line',
-							    data: {
-								    labels: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"],
-								    datasets: [
-								        {
-								            label: "Ingresos",
-								            backgroundColor: 'rgba(0,200,83,0.1)',
-								            borderColor:  'rgba(0,200,83,1)',
-								            borderWidth: 2,
-								            data: [17058856, 33058856, 37058856, 39058856, 57058856, 67058856, 77058856, 77058856, 67058856, 87058856, 77058856, 97058856],
-								        }, {
-								            label: "Egresos",
-								            backgroundColor: 'rgba(255,99,132,0.1)',
-								            borderColor:  'rgba(255,99,132,1)',
-								            borderWidth: 2,
-								            data: [1705885, 3305885, 3705885, 3905885, 5705885, 6705885, 7705885, 7705885, 6705885, 8705885, 7705885, 9705885],
-								        }
-								    ]
-								}
-							});
-	                    } else if (w<=768) {
-                            var ctx = document.getElementById("myChart6");
-							var myChart6 = new Chart(ctx, {
-							    type: 'line',
-							    data: {
-								    labels: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"],
-								    datasets: [
-								        {
-								            label: "Ingresos (Bsf)",
-								            backgroundColor: 'rgba(0,200,83,0.1)',
-								            borderColor:  'rgba(0,200,83,1)',
-								            borderWidth: 2,
-								            data: [17058856, 33058856, 37058856, 39058856, 57058856, 67058856, 77058856, 77058856, 67058856, 87058856, 77058856, 97058856],
-								        }, {
-								            label: "Egresos (Bsf)",
-								            backgroundColor: 'rgba(255,99,132,0.1)',
-								            borderColor:  'rgba(255,99,132,1)',
-								            borderWidth: 2,
-								            data: [1705885, 3305885, 3705885, 3905885, 5705885, 6705885, 7705885, 7705885, 6705885, 8705885, 7705885, 9705885],
-								        }
-								    ]
-								}, options: {
-									        scales: {
-									            yAxes: [{
-									                display: false
-									            }]
-									        }
-									    }
-								});
-	                    }
-	                }
-	            }
-                checkWidth();
-                jQuery(window).resize(checkWidth);
+                jQuery('#test').click(function(event) {   
+                    if(this.checked) {
+                        // Iterate each checkbox
+                        $(':checkbox').each(function() {
+                            this.checked = true;                        
+                        });
+                    } 
+                    if(!this.checked) {
+                        // Iterate each checkbox
+                        $(':checkbox').each(function() {
+                            this.checked = false;                        
+                        });
+                    }
+                });
+                var ctx = document.getElementById("myChart5");
+                var myChart5 = new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"],
+                        datasets: [
+                            {
+                                label: "Ingresos",
+                                backgroundColor: 'rgba(0,200,83,0.1)',
+                                borderColor:  'rgba(0,200,83,1)',
+                                borderWidth: 2,
+                                data: [17058856, 33058856, 37058856, 39058856, 57058856, 67058856, 77058856, 77058856, 67058856, 87058856, 77058856, 97058856],
+                            }, {
+                                label: "Egresos",
+                                backgroundColor: 'rgba(255,99,132,0.1)',
+                                borderColor:  'rgba(255,99,132,1)',
+                                borderWidth: 2,
+                                data: [1705885, 3305885, 3705885, 3905885, 5705885, 6705885, 7705885, 7705885, 6705885, 8705885, 7705885, 9705885],
+                            }
+                        ]
+                    }
+                });
+                var ctx2 = document.getElementById("myChart6");
+                var myChart6 = new Chart(ctx2, {
+                    type: 'bar',
+                    data: {
+                        labels: ["Colección 1", "Colección 2", "Colección 3"],
+                        datasets: [
+                            {
+                                label: "Colecciones",
+                                backgroundColor: 'rgba(0,200,83,0.1)',
+                                borderColor:  'rgba(0,200,83,1)',
+                                borderWidth: 2,
+                                data: [1705, 3305, 3705],
+                            }, {
+                                label: "Gerentes",
+                                backgroundColor: 'rgba(255,99,132,0.1)',
+                                borderColor:  'rgba(255,99,132,1)',
+                                borderWidth: 2,
+                                data: [170, 330, 370],
+                            }
+                        ]
+                    }
+                });  
             });
         </script>
-
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.2/Chart.min.js"></script>
-		<script>
-			var ctx = document.getElementById("myChart1");
-			var myChart1 = new Chart(ctx, {
-			    type: 'doughnut',
-			    data: { labels: [ "1ra Colección (Unidad)", "2da Colección (Unidad)", "3ra Colección (Unidad)" ],
-					    datasets: [ {
-					            data: [800, 1500, 2400],
-					            backgroundColor: [ "#FF6384", "#36A2EB", "#FFCE56" ],
-					            hoverBackgroundColor: [ "#FF6384", "#36A2EB", "#FFCE56" ]
-					        }]
-						}
-			});
-			var ctx = document.getElementById("myChart2");
-			var myChart2 = new Chart(ctx, {
-			    type: 'doughnut',
-			    data: { labels: [ "1ra Colección (Bsf)", "2da Colección (Bsf)", "3ra Colección (Bsf)" ],
-					    datasets: [ {
-					            data: [15688123, 33456123, 34326759],
-					            backgroundColor: [ "#FF6384", "#36A2EB", "#FFCE56" ],
-					            hoverBackgroundColor: [ "#FF6384", "#36A2EB", "#FFCE56" ]
-					        }]
-						}
-			});
-			var ctx = document.getElementById("myChart3");
-			var myChart3 = new Chart(ctx, {
-			    type: 'doughnut',
-			    data: { labels: [ "1ra Colección (Bsf)", "2da Colección (Bsf)", "3ra Colección (Bsf)" ],
-					    datasets: [ {
-					            data: [10633002, 15988147, 17058856],
-					            backgroundColor: [ "#FF6384", "#36A2EB", "#FFCE56" ],
-					            hoverBackgroundColor: [ "#FF6384", "#36A2EB", "#FFCE56" ]
-					        }]
-						}
-			});
-			var ctx = document.getElementById("myChart4");
-			var myChart4 = new Chart(ctx, {
-			    type: 'doughnut',
-			    data: { labels: [
-				        "1ra Colección (Gerentes)", "2da Colección (Gerentes)", "3ra Colección (Gerentes)" ],
-					    datasets: [{
-				            data: [10, 19, 35],
-				            backgroundColor: [ "#FF6384", "#36A2EB", "#FFCE56" ], 
-				            hoverBackgroundColor: [ "#FF6384", "#36A2EB", "#FFCE56" ]
-					        }]
-					}
-			});
-			/*jQuery( "#chat1" ).click(function() {
-				$("#pchat1").toggleClass("destruncate");
-			});
-			jQuery( "#chat2" ).click(function() {
-				$("#pchat2").toggleClass("destruncate");
-			});
-			jQuery( "#chat3" ).click(function() {
-				$("#pchat3").toggleClass("destruncate");
-			});
-			jQuery( "#chat4" ).click(function() {
-				$("#pchat4").toggleClass("destruncate");
-			});*/
-		</script>
 	</body>
 </html>
